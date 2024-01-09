@@ -463,13 +463,36 @@
     - **Recall** (Fraction of the negatives that were wrongly predicted)
 
       - F.ex - In search engine - (Recall is completeness of results, and what fraction of relevancy was found)."\n"
-   
+     
+        
 **True Positives (TP):** The cases in which the model correctly predicted the positive class.
 **True Negatives (TN):** The cases in which the model correctly predicted the negative class.
 **False Positives (FP):** The cases in which the model incorrectly predicted the positive class (also known as a "Type I error").
 **False Negatives (FN):** The cases in which the model incorrectly predicted the negative class (also known as a "Type II error").
 ![PrecisionvsRecall](precisionvsrecall.png)
 
+Based on the confusion matrix, several performance metrics can be calculated:
+
+Recall (Sensitivity or True Positive Rate):
+
+Recall is the ratio of correctly predicted positive observations to all actual positives. It answers the question: Out of all the possible positive labels, how many did the model correctly identify?
+Formula: Recall = TP / (TP + FN)
+Precision (Positive Predictive Value):
+
+Precision is the ratio of correctly predicted positive observations to the total predicted positives. It answers the question: Of all the labels the model predicted to be positive, how many are actually positive?
+Formula: Precision = TP / (TP + FP)
+F1 Score:
+
+The F1 Score is the harmonic mean of precision and recall, taking both false positives and false negatives into account. It is used to measure a test's accuracy and balances the trade-off between precision and recall.
+Formula: F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+
+The F1 Score is particularly useful when the distribution of the classes is uneven or when one wants to balance the importance of precision and recall. For instance, in a medical diagnosis scenario, we might want to optimize for recall (minimize false negatives) since missing out on a true condition could be dangerous, but we would also want to maintain a reasonable level of precision so that we are not treating patients for illnesses they do not have.
+
+In summary:
+
+Recall gives us an indication of missed positive cases.
+Precision tells us how many of the predicted positive cases were actually positive.
+F1 Score provides a single score that balances both the concerns of precision and recall in one number.
   </br>
 
 - **Step 9: Business Goal Evaluation**
