@@ -462,7 +462,8 @@
 
     - **Recall** (Fraction of the negatives that were wrongly predicted)
 
-      - F.ex - In search engine - (Recall is completeness of results, and what fraction of relevancy was found).
+      - F.ex - In search engine - (Recall is completeness of results, and what fraction of relevancy was found)."\n"
+   
 **True Positives (TP):** The cases in which the model correctly predicted the positive class.
 **True Negatives (TN):** The cases in which the model correctly predicted the negative class.
 **False Positives (FP):** The cases in which the model incorrectly predicted the positive class (also known as a "Type I error").
